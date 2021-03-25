@@ -2,8 +2,14 @@ require './environment'
 
 module FormsLab
   class App < Sinatra::Base
+    get '/' do
 
-    # code other routes/actions here
+    erb :root
+    end
 
+    get '/new' do
+    
+    erb :'pirates/new'
+    end
   end
 end
